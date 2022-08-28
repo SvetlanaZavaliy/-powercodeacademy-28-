@@ -1,0 +1,121 @@
+.common-form label, .common-form__text, .common-form__input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.registration__wrapper {
+  padding: 70px 0;
+  background: #e5e5e5;
+}
+.registration__form {
+  background: #FFFFFF;
+  -webkit-backdrop-filter: blur(11px);
+          backdrop-filter: blur(11px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.common-form__input {
+  height: 50px;
+  background: #F4F4F4;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  padding: 11px 15px 12px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.common-form__input::-moz-placeholder {
+  color: #222;
+}
+.common-form__input:-ms-input-placeholder {
+  color: #222;
+}
+.common-form__input::placeholder {
+  color: #222;
+}
+.common-form__input-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 17px;
+}
+.common-form__date {
+  width: 48%;
+  margin-right: 16px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.common-form__select {
+  width: 48%;
+  padding-left: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(./images/Stroke-small.svg) no-repeat right #F4F4F4;
+  background-position-x: calc(100% - 16px);
+}
+.common-form__radio-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.common-form__text {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+.common-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.common-form label input {
+  display: none;
+}
+.common-form label span {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+.common-form label input:checked + span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #222;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+.common-form__checkbox-group {
+  width: 100%;
+}
+.common-form__checkbox-group label span {
+  border-radius: 3px;
+  margin-right: 8px;
+}
+.common-form__checkbox-group label input:checked + span::before {
+  content: url(./images/Path.svg);
+  width: 0;
+  height: 0;
+  left: 5px;
+  top: 0;
+}/*# sourceMappingURL=main.css.map */
